@@ -282,7 +282,8 @@ Call the below function inside the Constructor. It should be added before the Lo
 Add the below code to inside the MainPage.XAML.cs to implement the authentication function.
 
 ```chsarp
-private MobileServiceUser user;
+
+        private MobileServiceUser user;
         MobileServiceClient client = new MobileServiceClient("https://<Replace Name>.azurewebsites.net");
 
         public MobileServiceAuthenticationProvider ServiceProvider { get; private set; }
