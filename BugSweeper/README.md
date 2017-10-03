@@ -21,13 +21,13 @@ This challenge requires:
 
 ### Challenge  Walkthrough
 
-####Step 1: Open Visual Studio 2015 > File > New Project > Choose Blank App (Xamarin.Forms.Portable) under the Cross-Platform Visual C# template > Name it *BugSweeper*.
+#### Step 1: Open Visual Studio 2015 > File > New Project > Choose Blank App (Xamarin.Forms.Portable) under the Cross-Platform Visual C# template > Name it *BugSweeper*.
 
 Note: Choose the target platform and minimum platform versions that your Universal Windows application will support. Click *OK* on this dialogue box.
 
 #### Step 2: Right Click on BugSweeper (Portable) > Add > Forms Xaml Page under Visual C# - Cross-Platform > Name it BugSweeperPage.cs.
 
-####Step 3: Go to App.cs and call the BugSweeperPage class which you just created, inside the constructor.
+#### Step 3: Go to App.cs and call the BugSweeperPage class which you just created, inside the constructor.
 
     
 
@@ -41,13 +41,13 @@ Note: Choose the target platform and minimum platform versions that your Univers
 
 ```
 
-####Step 4: Add the [downloaded](https://github.com/AparnaChinya/Mini-Hacks/tree/master/BugSweeper) resources into your project.
+#### Step 4: Add the [downloaded](https://github.com/AparnaChinya/Mini-Hacks/tree/master/BugSweeper) resources into your project.
 * Right Click BugSweeper (Portable) > Add > Existing Item > Board.cs AND Tile.cs
 * Right Click BugSweeper (Portable) > Add > Create New Folder> Name it Images > Copy and paste the 2 images from the Downloaded folder into this.
 
-####Step 5: Lets prepare the UI for our game! Go to BugSweeperPage.xaml and copy-paste the below code inside the ContentPage node.
+#### Step 5: Lets prepare the UI for our game! Go to BugSweeperPage.xaml and copy-paste the below code inside the ContentPage node.
 
-````XAML
+```XAML
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BugSweeper;assembly=BugSweeper"
@@ -125,10 +125,10 @@ Note: Choose the target platform and minimum platform versions that your Univers
 </ContentPage>
 ```
 
-####Step 6: Let's now write our Game logic. Got to BugSweeper.xaml.cs and follow the below steps.
+#### Step 6: Let's now write our Game logic. Got to BugSweeper.xaml.cs and follow the below steps.
 * Declare the below three variables inside your BugSweeper class.
 
-````csharp
+```csharp
         const string timeFormat = @"%m\:ss";
 
         bool isGameInProgress;
@@ -167,9 +167,9 @@ Note: Choose the target platform and minimum platform versions that your Univers
         PrepareForNewGame();
 ```
 
-####Step 7: Add the below function for Preparing for a New Game.
+#### Step 7: Add the below function for Preparing for a New Game.
 
-````charp
+```charp
         void PrepareForNewGame()
         {
             board.NewGameInitialize();
@@ -184,9 +184,9 @@ Note: Choose the target platform and minimum platform versions that your Univers
         }
 ```
 
-####Step 8: Add the function for Winning Condition of the game.
+#### Step 8: Add the function for Winning Condition of the game.
 
-````charp
+```charp
         async void DisplayWonAnimation()
         {
             congratulationsText.Scale = 0;
@@ -215,8 +215,8 @@ Note: Choose the target platform and minimum platform versions that your Univers
         }
 ```
 
-####Step 9: Add the function for loosing Condition of the game.
-````charp
+#### Step 9: Add the function for loosing Condition of the game.
+```charp
         async void DisplayLostAnimation()
         {
             consolationText.Scale = 0;
@@ -232,9 +232,9 @@ Note: Choose the target platform and minimum platform versions that your Univers
         }
 ```
 
-####Step 10: Write the Task for displaying the PlayAnimation once the game finishes.
+#### Step 10: Write the Task for displaying the PlayAnimation once the game finishes.
 
-````chsarp
+```chsarp
         async Task DisplayPlayAgainButton()
         {
             playAgainButton.Scale = 0;
@@ -250,18 +250,18 @@ Note: Choose the target platform and minimum platform versions that your Univers
 
 ```
 
-####Step 11: Call the NewGame function when a user clicks on the OnPlayAgain button.
+#### Step 11: Call the NewGame function when a user clicks on the OnPlayAgain button.
 
-````chsarp
+```chsarp
      void OnplayAgainButtonClicked(object sender, object EventArgs)
         {
             PrepareForNewGame();
         }
 ```
 
-####Step 12: Add function for OnMainContentViewSizeChanged AND OnBoardContentViewSizeChanged to take care of the UI for different screen sizes for all the mobile applications.
+#### Step 12: Add function for OnMainContentViewSizeChanged AND OnBoardContentViewSizeChanged to take care of the UI for different screen sizes for all the mobile applications.
 
-````csharp
+```csharp
 void OnMainContentViewSizeChanged(object sender, EventArgs args)
         {
             ContentView contentView = (ContentView)sender;
@@ -307,7 +307,7 @@ void OnMainContentViewSizeChanged(object sender, EventArgs args)
         }
 ```
 
-##Your final Game looks like this ! :)
+## Your final Game looks like this ! :)
 On Android 
 ![](https://github.com/nishanil/Mini-Hacks/blob/master/BugSweeper/Screenshots/01Android.png)
 
