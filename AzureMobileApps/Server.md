@@ -1,17 +1,17 @@
-#AzureMobileApps - Server
+# AzureMobileApps - Server
 
 This is the STEP 1 of the Azure Mobile App challenge. In this, you will be creating an Azure Mobile app and integrating it with a SQL Server and adding authentication in the backend Node.js server.
 　
  
-####You must add Authentication (Service Providers) in your app backend with any *ONE* provider: Facebook, Google, Microsoft and Twitter. 
+#### You must add Authentication (Service Providers) in your app backend with any *ONE* provider: Facebook, Google, Microsoft and Twitter. 
 
-##Challenge Walkthrough:
+## Challenge Walkthrough:
 You can begin by  creating a Mobile app on Azure. Go to the *Quick Start* section and integrate it with a SQL database. Later you can follow steps for registering your applications with your favourite providers and adding the details of the same to Azure app.
 
 * Create Azure Mobile app
 * Register your app with a provider 
    
-##Create Azure Mobile App
+## Create Azure Mobile App
 　
     1. Go to Azure Portal. Under "New", select Mobile App.
 　
@@ -34,10 +34,10 @@ At the end of this step, you will see something similar to the below image.
 4.Go under the *Easy Tables* tab under your Azure Mobile App > Click on ADD FROM CSV > Upload the myTable.csv which is present  [here](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/myTable.csv)
 
 
-##Register your app with a provider (Any 2)
+## Register your app with a provider (Any 2)
 Note: in this process, you will come across some keys/passwords/client secrets specific to the provider you choose and your app. Do not share this secret with anyone or distribute it within a client application.  
 　
-##Register your application with Facebook
+## Register your application with Facebook
 1. Log on to the Azure portal, and navigate to your application. Copy your URL. You will use this to configure your Facebook app.
 
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/C.png)
@@ -69,7 +69,7 @@ Note: in this process, you will come across some keys/passwords/client secrets s
 ![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/H.png)
 
 
-##Add Facebook information to your application
+## Add Facebook information to your application
 
 Back in the Azure portal, navigate to your application. Click Settings > Authentication / Authorization, and make sure that App Service Authentication is On.
 
@@ -90,7 +90,7 @@ You are now ready to use Facebook for authentication in your app.
 　
 　
 　
-##Register your application with Twitter
+## Register your application with Twitter
 
 To complete the procedure in this topic, you must have a Twitter account that has a verified email address and phone number. To create a new Twitter account, go to twitter.com.
 Log on to the Azure portal, and navigate to your application. Copy your URL. You will use this to configure your Twitter app.
@@ -110,7 +110,7 @@ Log on to the Azure portal, and navigate to your application. Copy your URL. You
 6.	Click the Settings tab, check Allow this application to be used to sign in with Twitter, then click Update Settings.
 7.	Select the Keys and Access Tokens tab. Make a note of the values of Consumer Key (API Key) and Consumer secret (API Secret). 
 
-##Add Twitter information to your application
+## Add Twitter information to your application
 
 Back in the Azure portal, navigate to your application. Click Settings, and then Authentication / Authorization.
 If the Authentication / Authorization feature is not enabled, turn the switch to On.
@@ -163,7 +163,7 @@ Log on to the Azure portal, and navigate to your application. Copy your URL, whi
 9.	Paste the App Service URL you copied earlier into Authorized JavaScript Origins, then paste your redirect URI into Authorized Redirect URI. The redirect URI is the URL of your application appended with the path, /.auth/login/google/callback. For example, https://contoso.azurewebsites.net/.auth/login/google/callback. Make sure that you are using the HTTPS scheme. Then click Create.
 10.	On the next screen, make a note of the values of the client ID and client secret.
 
-##Add Google information to your application
+## Add Google information to your application
 
 Back in the Azure portal, navigate to your application. Click Settings, and then Authentication / Authorization.
 If the Authentication / Authorization feature is not enabled, turn the switch to On.
@@ -174,7 +174,7 @@ Click Google. Paste in the App ID and App Secret values which you obtained previ
 By default, App Service provides authentication but does not restrict authorized access to your site content and APIs. You must authorize users in your app code.
 4.	Click Save.
 
-##Register your app with Microsoft Account
+## Register your app with Microsoft Account
 
 Log on to the Azure portal, and navigate to your application. Copy your URL, which later you use to configure your app with Microsoft Account.
 Navigate to the My Applications page in the Microsoft Account Developer Center, and log on with your Microsoft account, if required.
@@ -198,7 +198,7 @@ Make sure that you are using the HTTPS scheme.
 [AZURE.IMPORTANT] The password is an important security credential. Do not share the password with anyone or distribute it within a client application.
 
 + 
-##Add Microsoft Account information to your App Service application
+## Add Microsoft Account information to your App Service application
 
 Back in the Azure portal, navigate to your application, click Settings > Authentication / Authorization.
 If the Authentication / Authorization feature is not enabled, switch it On.
@@ -214,7 +214,7 @@ By default, App Service provides authentication but does not restrict authorized
 5.	Click Save.
 
 You are now ready to use Microsoft Account for authentication in your app.
-##Content Reference: 
+## Content Reference: 
 https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-facebook-authentication
 　
 
