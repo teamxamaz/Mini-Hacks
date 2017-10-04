@@ -8,10 +8,10 @@ In this challenge you have to create an Azure Mobile app and develop the Client 
 In order to finish the challenge you have to complete the below two steps:
 
 1. Create AzureMobileApp backend. At the server level you will be adding Authentication of Facebook, Twitter, Google, Microsoft (Any *ONE*).
-In order to complete this step follow the guide from [here](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Server.md).
+In order to complete this step follow the guide from [here](/AzureMobileApps/Server.md).
 
 2. Develop the Client end code. Retrieve the data from the easy tables after authentication is performed.
-To complete this step follow the guid from [here](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Client.md) 
+To complete this step follow the guid from [here](/AzureMobileApps/Client.md) 
 
 At the end you will get to know who your Role Model is.
 
@@ -19,5 +19,5 @@ One of the Role Models might look like this ;)
 
 Good Luck! 
 
-![IMAGE](https://github.com/nishanil/Mini-Hacks/blob/master/AzureMobileApps/Images/RoleModel.PNG)
+![IMAGE](/AzureMobileApps/Images/RoleModel.PNG)
 
