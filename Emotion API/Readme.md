@@ -13,13 +13,13 @@ This challenge requires:
 
 ### Challenge Walkthrough ###
 
-#### Step 01: Get Translation API Key ####
+#### Step 01: Get Emotion API Key ####
 
 Visit [Azure Portal](https://portal.azure.com/) and click on 'New' button. In the search box, search for 'Cognitive Services'. Click on the result, which will bring up details pane. There will be option to 'create' a service.
 
 ![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/01-Cognitive-Services-Creation.png)
 
-Give this service a name, select subscription and make sure API Type selected is '**Translator Text API**' 
+Give this service a name, select subscription and make sure API Type selected is '**Emotion API**' 
 
 ![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/02-Cognitive-Services-Emotion-API.png)
 
