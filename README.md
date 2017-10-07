@@ -16,3 +16,4 @@ _Note: Mini-Hacks are inspired by [Xamarin's original challenges for Evolve](htt
 1. [Aparna Chinya](https://twitter.com/AparnaChinya) (BugSweeper & Azure Mobile Apps)
 2. [Mayur Tendulkar](https://twitter.com/mayur_tendulkar) (Emotion API & Translator API)
 3. [Nish Anil](https://twitter.com/NishAnil) (Xamarin Workbooks)
+4. [Sarthak Mahapatra](https://twitter.com/sarthakm) (Speech API)

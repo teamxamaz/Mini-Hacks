@@ -9,18 +9,17 @@ Below steps should help you to complete this challenge. For queries, get in touc
 This challenge requires:
 
 * Active Microsoft Azure Subscription. Trial is available [here](https://azure.microsoft.com/en-in/free/)
-* Microsoft Visual Studio 2015 Update 3 on Windows (with Xamarin tools installed)
-* Xamarin Studio on Mac
+* Microsoft Visual Studio 2017 for Mac or Windows
 
 ### Challenge Walkthrough ###
 
-#### Step 01: Get Translation API Key ####
+#### Step 01: Get Emotion API Key ####
 
 Visit [Azure Portal](https://portal.azure.com/) and click on 'New' button. In the search box, search for 'Cognitive Services'. Click on the result, which will bring up details pane. There will be option to 'create' a service.
 
 ![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/01-Cognitive-Services-Creation.png)
 
-Give this service a name, select subscription and make sure API Type selected is '**Translator Text API**' 
+Give this service a name, select subscription and make sure API Type selected is '**Emotion API**' 
 
 ![](https://github.com/mayur-tendulkar/Mini-Hacks/raw/master/Emotion%20API/Images/02-Cognitive-Services-Emotion-API.png)
 
@@ -45,13 +44,13 @@ Once the service is created, click on Keys section and note down the keys.
 * Add new Shared Project and name it as 'EmotionClient.Shared'
 * Add reference to this Shared Project in iOS, Windows and Android projects.
 
-##### Add required NuGet Packages #####
+##### Add required NuGet Packages 
 
 For iOS, Windows and Android projects add `'Microsoft.ProjectOxford.Emotion'` NuGet package. 
 
 Note: If you get any error, add `'Microsoft.Bcl.Build NuGet'` package first and then try to add `'Microsoft.ProjectOxford.Emotion'`
 
-##### Build EmotionClient.Shared #####
+##### Build EmotionClient.Shared 
 
 In this project add `'Core.cs'` class which will consume Emotion API and will be shared across iOS, Windows and Android applications.
 
@@ -164,6 +163,7 @@ public static class BitmapHelpers
     }
 }
 ```
+
 In `'MainActivity.cs'` define variables which will hold the controls and photographs taken.
 
 ```csharp
@@ -279,7 +279,7 @@ protected override async void OnActivityResult(int requestCode, Result resultCod
 }
 ```
 
-##### Build EmotionClient.iOS #####
+##### Build EmotionClient.iOS 
 
 When you're connected to Mac open Main.Storyboard from iOS application. On this storyboard, drag and drop controls from toolbox and design the UI as shown below.
 
@@ -322,11 +322,11 @@ Double click `TakePhotoButton` and add an event handler for the same. Write belo
 ```
 
 
-##### Build EmotionClient.UWP#####
+##### Build EmotionClient.UWP
 In this project, modify 'MainPage.XAML' file to create UI for the screen.
 
 
-````XAML
+```XAML
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
@@ -340,7 +340,7 @@ In this project, modify 'MainPage.XAML' file to create UI for the screen.
 
 Double click _pictureButton add an event handler for the same. Write below code in that event handler.
 
-````chsarp
+```chsarp
  	    CameraCaptureUI captureUI = new CameraCaptureUI();
             captureUI.PhotoSettings.Format = CameraCaptureUIPhotoFormat.Jpeg;
             captureUI.PhotoSettings.CroppedSizeInPixels = new Size(200, 200);
@@ -372,4 +372,4 @@ Double click _pictureButton add an event handler for the same. Write below code 
 ```
 
 
-Run the apps and notice the output. Display the result to judges to mark your hack as complete.
+#### Run the apps and notice the output. Display the result to judges to mark your hack as complete.
